@@ -1,29 +1,36 @@
 import React from 'react';
 
-function Navbar({ handlePageChange }) {
+function Navbar({ currentPage, handlePageChange }) {
     return (
-        <nav>
+        <nav className='nav'>
+            <a href="/" className='title'>Jack Stockwell</a>
             <ul>
                 <li>
-                    <a>Home
+                    <a
+                        href='#home'
+                        onClick={handlePageChange}
+                        >Home
                     </a>
                 </li>
                 <li>
                     <a
+                        href='#projects'
                         onClick={handlePageChange}
-                    >Projects
+                        >Projects
                     </a>
                 </li>
                 <li>
                     <a
                         href='#blog'
-                        
-                    >Blog
+                        onClick={handlePageChange}
+                        >Blog
                     </a>
                 </li>
                 <li>
                     <a
-                    >Socials
+                        href='#socials'
+                        onClick={handlePageChange}
+                        >Socials
                     </a>
                 </li>
             </ul>

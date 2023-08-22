@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 
 export default function Container() {
 
@@ -26,7 +27,7 @@ export default function Container() {
 
     return (
         <main>
-            <Navbar handlePageChange={handlePageChange}/>
+            <Navbar currentPage={page} handlePageChange={handlePageChange}/>
             {renderPage()}
         </main>
     )
