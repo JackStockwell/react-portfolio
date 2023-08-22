@@ -1,29 +1,37 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function Navbar({ handlePageChange }) {
+function Navbar({ currentPage, handlePageChange }) {
     return (
-        <nav>
+        <nav className='nav'>
+            <a href="/" className='title'>Jack Stockwell</a>
             <ul>
                 <li>
-                    <a>Home
+                    <a
+                        href='#home'
+                        onClick={handlePageChange}
+                        ><FontAwesomeIcon icon="fa-solid fa-house" />Home
                     </a>
                 </li>
                 <li>
                     <a
+                        href='#projects'
                         onClick={handlePageChange}
-                    >Projects
+                        ><FontAwesomeIcon icon="fa-solid fa-heart" />Projects
                     </a>
                 </li>
                 <li>
                     <a
                         href='#blog'
-                        
-                    >Blog
+                        onClick={handlePageChange}
+                        >Blog
                     </a>
                 </li>
                 <li>
                     <a
-                    >Socials
+                        href='#socials'
+                        onClick={handlePageChange}
+                        ><FontAwesomeIcon icon="fa-solid fa-circle-user" />Socials
                     </a>
                 </li>
             </ul>
