@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Navbar({ currentPage, handlePageChange }) {
     return (
@@ -9,14 +10,14 @@ function Navbar({ currentPage, handlePageChange }) {
                     <a
                         href='#home'
                         onClick={handlePageChange}
-                        >Home
+                        ><FontAwesomeIcon icon="fa-solid fa-house" />Home
                     </a>
                 </li>
                 <li>
                     <a
                         href='#projects'
                         onClick={handlePageChange}
-                        >Projects
+                        ><FontAwesomeIcon icon="fa-solid fa-heart" />Projects
                     </a>
                 </li>
                 <li>
@@ -30,7 +31,7 @@ function Navbar({ currentPage, handlePageChange }) {
                     <a
                         href='#socials'
                         onClick={handlePageChange}
-                        >Socials
+                        ><FontAwesomeIcon icon="fa-solid fa-circle-user" />Socials
                     </a>
                 </li>
             </ul>

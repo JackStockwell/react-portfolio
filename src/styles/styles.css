@@ -54,9 +54,18 @@ body {
     border: 2px solid white;
 }
 
-.h-wrapper {
+.h-div {
     display: flex;
-    height: 100%;
+    flex-flow: column nowrap;
+    height: 90%;
+    padding: 3rem;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+/* SECTION */
+
+.section {
+    
 }
