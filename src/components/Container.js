@@ -5,16 +5,14 @@ import Projects from "./pages/Projects";
 
 export default function Container() {
 
-
-
     const [ page, setPage ] = useState('Home')
 
     const renderPage = () => {
         switch (page) {
             case 'Home':
-                return <Home />
+                return <Home page={page}/>
             case 'Projects':
-                return <Projects />
+                return <Projects page={page}/>
             default:
                 break;
         }

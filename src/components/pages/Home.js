@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from '../Title';
 
-export default function Home() {
+export default function Home({ page }) {
 
     const headingData = {
         title: "Hi, I'm Jack Stockwell",
@@ -10,7 +10,7 @@ export default function Home() {
 
     return (
         <>
-            <Title header={headingData}></Title>
+            <Title page={page} header={headingData}></Title>
             <section>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque

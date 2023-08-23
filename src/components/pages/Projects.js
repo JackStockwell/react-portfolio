@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from '../Title';
 
-export default function Project() {
+export default function Project({ page }) {
     
     const headingData = {
         title: "My Projects",
@@ -10,7 +10,7 @@ export default function Project() {
 
     return (
         <>
-            <Title header={headingData}></Title>
+            <Title page={page} header={headingData}></Title>
             <section className='section'>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque

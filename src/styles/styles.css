@@ -5,13 +5,30 @@
 }
 
 :root {
-    --dark-bg: #1D1E26
+    --bg-primary: #1C1D25;
+    --bg-secondary: #8E9394;
+    --light: #EBEBEB;
+    --blue: #85bcc7;
 }
+
+/* BODY */
 
 body {
     margin: 0;
     padding: 0;
-    background: var(--dark-bg);
+    background: var(--bg-primary);
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--bg-secondary);
 }
 
 /* NAV */
@@ -25,7 +42,7 @@ body {
     align-items: center;
     padding: 1rem 2rem;
     z-index: 3;
-    background: transparent;
+    background: var(--bg-primary);
 }
 
 .nav ul {
@@ -52,16 +69,25 @@ body {
     height: 100vh;
     overflow: hidden;
     border: 2px solid white;
+    background: center / cover url('../assets/bgs/layered-steps.svg'), var(--light);
 }
 
 .h-div {
     display: flex;
+    gap: 1rem;
     flex-flow: column nowrap;
     height: 90%;
     padding: 3rem;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.profile-img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* SECTION */
