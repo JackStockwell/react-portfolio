@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import Socials from "./pages/Socials";
 
 export default function Container() {
 
@@ -13,6 +14,8 @@ export default function Container() {
                 return <Home page={page}/>
             case 'Projects':
                 return <Projects page={page}/>
+            case 'Socials':
+                return <Socials page={page}/>
             default:
                 break;
         }
