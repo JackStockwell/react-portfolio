@@ -1,11 +1,11 @@
 import React from 'react';
 import Title from '../Title';
 
-export default function Project({ page }) {
+export default function Socials({ page }) {
     
     const headingData = {
-        title: "My Projects",
-        sub: "My latest works, all on display."
+        title: "Socials",
+        sub: "Come find out what I'm up to."
     }
 
     return (

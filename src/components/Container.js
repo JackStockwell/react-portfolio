@@ -2,19 +2,20 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import Socials from "./pages/Socials";
 
 export default function Container() {
-
-
 
     const [ page, setPage ] = useState('Home')
 
     const renderPage = () => {
         switch (page) {
             case 'Home':
-                return <Home />
+                return <Home page={page}/>
             case 'Projects':
-                return <Projects />
+                return <Projects page={page}/>
+            case 'Socials':
+                return <Socials page={page}/>
             default:
                 break;
         }
