@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../Header';
+import Header from '../Header/index';
 
 export default function Socials({ page }) {
     

@@ -1,6 +1,6 @@
 import React from "react";
-import ProfilePic from "../assets/profilepic.jpeg"
-import "../styles/headers.css"
+import ProfilePic from "../../assets/profilepic.jpeg"
+import "./headers.css"
 
 export default function Title({ page, header: {title, sub}}) {
 

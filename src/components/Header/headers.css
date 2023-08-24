@@ -7,7 +7,7 @@
     padding: 2rem 0;
     height: 100vh;
     overflow: hidden;
-    background: center / cover url('../assets/bgs/header-bg1.svg');
+    background: center / cover url('../../assets/bgs/header-bg1.svg');
 }
 
 .blur {

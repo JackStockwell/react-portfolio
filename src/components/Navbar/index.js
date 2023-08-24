@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/navbar.css'
+import './navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useMediaPredicate } from 'react-media-hook';
 
