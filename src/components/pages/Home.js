@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from '../Header/index';
+import Reveal from '../utils/Reveal';
 
-export default function Home({ page }) {
+export default function Home() {
 
     const headingData = {
         title: "Hi, I'm Jack Stockwell",
@@ -10,10 +11,11 @@ export default function Home({ page }) {
 
     return (
         <>
-            <Header page={page} header={headingData}></Header>
+            <Header page={"Home"} header={headingData}></Header>
             <div className='content-wrap'>
                 <section className='section b-inline'>
                     <div>
+                        <Reveal>
                         <h3>About me</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
@@ -27,6 +29,7 @@ export default function Home({ page }) {
                             vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
                             fames ac ante ipsum primis in faucibus.
                         </p>
+                        </Reveal>
                     </div>
                 </section>
                 <section className='section'>
