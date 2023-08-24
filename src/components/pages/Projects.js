@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from '../Title';
+import Header from '../Header';
 
 export default function Project({ page }) {
     
@@ -10,7 +10,7 @@ export default function Project({ page }) {
 
     return (
         <>
-            <Title page={page} header={headingData}></Title>
+            <Header page={page} header={headingData}></Header>
             <section className='section'>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
