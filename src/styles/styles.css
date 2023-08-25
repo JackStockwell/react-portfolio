@@ -51,6 +51,11 @@ body::-webkit-scrollbar-thumb {
     padding: 5rem 10rem;
 }
 
+.max-120 {
+    margin: auto;
+    max-width: 120em;
+}
+
 /* UTILS */
 
 .b-inline {

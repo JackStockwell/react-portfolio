@@ -3,10 +3,10 @@ import { motion, useInView, useAnimation } from "framer-motion";
 
 const Props = {
     children: Element,
-    width: "fit-content" | "100%"
+    width: "100%"
 }
 
-export default function Reveal({ children, width = "100%"}) {
+export default function Reveal({ children, width }) {
     const ref = useRef(null);
     const inView = useInView( ref, { once: true })
 

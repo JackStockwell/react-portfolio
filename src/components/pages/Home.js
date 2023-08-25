@@ -14,9 +14,10 @@ export default function Home() {
             <Header page={"Home"} header={headingData}></Header>
             <div className='content-wrap'>
                 <section className='section b-inline'>
-                    <div>
+                    <div className='max-120'>
                         <Reveal>
-                        <h3>About me</h3>
+                            <h3>About me</h3>
+                        </Reveal>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
                             velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
@@ -29,7 +30,6 @@ export default function Home() {
                             vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
                             fames ac ante ipsum primis in faucibus.
                         </p>
-                        </Reveal>
                     </div>
                 </section>
                 <section className='section'>
