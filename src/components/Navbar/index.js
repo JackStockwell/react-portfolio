@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import '../styles/navbar.css'
+import React, { useState } from 'react';
+import './navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useMediaPredicate } from 'react-media-hook';
+import { Link } from 'react-router-dom';
 
 
-function Navbar({ currentPage, handlePageChange }) {
+function Navbar() {
     
+    const [ currentPage, setPage ] = useState('Home')
     const [ isNavBar, setIsNavBar ] = useState(false)
 
     const handleMinWidth = useMediaPredicate("(min-width: 60em)")
@@ -13,7 +15,11 @@ function Navbar({ currentPage, handlePageChange }) {
     return (
         <nav className='nav'>
             <div>
-                <a href="/" className='title'>Jack Stockwell</a>
+                <Link
+                    to='/'
+                    onClick={() => setPage('Home')} >
+                    Jack Stockwell
+                </Link>
                 { !handleMinWidth &&
                     <button
                         className='hamburger'
@@ -25,36 +31,35 @@ function Navbar({ currentPage, handlePageChange }) {
             </div>
             <ul className={ isNavBar || handleMinWidth ? 'nav-list' : 'hidden'}>
                 <li>
-                    <a
+                    <Link
+                        to='/'
                         className={currentPage === 'Home' ? 'nav-a nav-active' : 'nav-a'}
-                        href='#home'
-                        onClick={handlePageChange}
-                        ><FontAwesomeIcon icon="fa-solid fa-house" />Home
-                    </a>
+                        onClick={() => setPage('Home')} >
+                        <FontAwesomeIcon icon="fa-solid fa-house" />Home
+                    </Link>
                 </li>
                 <li>
-                    <a
+                    <Link 
+                        to='/projects'
                         className={currentPage === 'Projects' ? 'nav-a nav-active' : 'nav-a'}
-                        href='#projects'
-                        onClick={handlePageChange}
-                        ><FontAwesomeIcon icon="fa-solid fa-heart" />Projects
-                    </a>
+                        onClick={() => setPage('Projects')}>
+                        <FontAwesomeIcon icon="fa-solid fa-heart" />Projects
+                    </Link>
+
                 </li>
                 <li>
-                    <a
+                    {/* <a
                         className={currentPage === 'Blog' ? 'nav-a nav-active' : 'nav-a'}
                         href='#blog'
                         onClick={handlePageChange}
                         >Blog
-                    </a>
-                </li>
-                <li>
-                    <a
+                    </a> */}
+                    <Link 
+                        to='/socials'
                         className={currentPage === 'Socials' ? 'nav-a nav-active' : 'nav-a'}
-                        href='#socials'
-                        onClick={handlePageChange}
-                        ><FontAwesomeIcon icon="fa-solid fa-circle-user" />Socials
-                    </a>
+                        onClick={() => setPage('Socials')}>
+                        <FontAwesomeIcon icon="fa-solid fa-circle-user" />Socials
+                    </Link>
                 </li>
             </ul>
 
