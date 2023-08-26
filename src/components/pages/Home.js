@@ -30,13 +30,14 @@ export default function Home() {
                                 fames ac ante ipsum primis in faucibus.
                             </p>
                         </Reveal>
+
                     </div>
                 </section>
                 <section className='section'>
                     <div className='max-120'>
                         <Reveal>
                             <h3>Skills</h3>
-                            <div>
+                            <div className=''>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
                                     velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
