@@ -9,7 +9,6 @@ export default function Home() {
         sub: "An aspiring Full-stack Developer, looking to break into the Web Development industry."
     }
 
-
     return (
         <>
             <Header page={"Home"} header={headingData}></Header>

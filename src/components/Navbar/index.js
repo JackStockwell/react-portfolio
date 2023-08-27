@@ -15,16 +15,16 @@ function Navbar() {
 
     return (
         <nav className='nav'>
-            <div>
-                <Link to='/' >
-                    Jack Stockwell
+            <div className='title'>
+                <Link to='/' className='spread' >
+                    <h1>Jack Stockwell</h1>
                 </Link>
                 { !handleMinWidth &&
                     <button
                         className='hamburger'
                         onClick={() => setIsNavBar(!isNavBar)}
                         >
-                        <FontAwesomeIcon icon="fa-solid fa-bars" />
+                        <FontAwesomeIcon className='hbicon' icon="fa-solid fa-bars" />
                     </button>               
                 }
             </div>
