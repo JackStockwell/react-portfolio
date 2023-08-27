@@ -1,11 +1,6 @@
-/* NAV MOBILE */
+@import url('../../styles/styles.css');
 
-:root {
-    --bg-primary: #8E9394;
-    --bg-secondary: #EBEBEB;
-    --dark: #1C1D25;
-    --blue: #85bcc7;
-}
+/* NAV MOBILE */
 
 .nav {
     position: absolute;
@@ -17,7 +12,7 @@
     padding: 0.5rem;
     align-items: center;
     z-index: 3;
-    background: var(--dark);
+    background: transparent;
 }
 
 .nav-list {
@@ -46,7 +41,7 @@
 }
 
 .nav-list li:active {
-    background-color: var(--bg-primary);
+    background-color: var(--dgreen);
 }
 
 .nav-list li a {
@@ -90,7 +85,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: var(--blue);
+    background-color: var(--dgreen);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
