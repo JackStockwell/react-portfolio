@@ -30,24 +30,28 @@ function Navbar() {
                 }
             </div>
             <ul className={ isNavBar || handleMinWidth ? 'nav-list' : 'hidden'}>
-                <li>
+                <li className='underline-a'>
                     <Link
                         to='/'
                         className={currentPage === 'Home' ? 'nav-a nav-active' : 'nav-a'}
-                        onClick={() => setPage('Home')} >
-                        <FontAwesomeIcon icon="fa-solid fa-house" />Home
+                        onClick={() => setPage('Home')} 
+                        >
+                        <FontAwesomeIcon className='icon' icon="fa-solid fa-house" />
+                        <span className='icon-span'>Home</span>
                     </Link>
                 </li>
-                <li>
+                <li className='underline-a'>
                     <Link 
                         to='/projects'
                         className={currentPage === 'Projects' ? 'nav-a nav-active' : 'nav-a'}
-                        onClick={() => setPage('Projects')}>
-                        <FontAwesomeIcon icon="fa-solid fa-heart" />Projects
+                        onClick={() => setPage('Projects')}
+                        >
+                        <FontAwesomeIcon className='icon' icon="fa-solid fa-heart" />
+                        <span className='icon-span'>Projects</span>
                     </Link>
 
                 </li>
-                <li>
+                <li className='underline-a'>
                     {/* <a
                         className={currentPage === 'Blog' ? 'nav-a nav-active' : 'nav-a'}
                         href='#blog'
@@ -57,8 +61,10 @@ function Navbar() {
                     <Link 
                         to='/socials'
                         className={currentPage === 'Socials' ? 'nav-a nav-active' : 'nav-a'}
-                        onClick={() => setPage('Socials')}>
-                        <FontAwesomeIcon icon="fa-solid fa-circle-user" />Socials
+                        onClick={() => setPage('Socials')}
+                        >
+                        <FontAwesomeIcon className='icon' icon="fa-solid fa-circle-user" />
+                        <span className='icon-span'>Socials</span>
                     </Link>
                 </li>
             </ul>
