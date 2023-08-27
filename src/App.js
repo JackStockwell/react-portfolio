@@ -15,14 +15,12 @@ library.add(faHouse, faHeart, faCircleUser, faBars)
 function App() {
   return (
     <>
-    <Navbar />
-
-
+      <Navbar />
       <Routes>
          <Route path='/' element={ <Home /> }/>
          <Route path='/projects' element={ <Projects /> }/>
          <Route path='/socials' element={ <Socials /> }/>
-      </Routes>
+      </Routes>      
     </>
   );
 }

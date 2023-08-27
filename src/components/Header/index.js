@@ -1,6 +1,6 @@
 import React from "react";
 import ProfilePic from "../../assets/profilepic.jpeg"
-import Reveal from "../utils/Reveal";
+import Reveal from "../utils/Animation/Reveal";
 import "./headers.css"
 
 export default function Title({ page, header: {title, sub}}) {

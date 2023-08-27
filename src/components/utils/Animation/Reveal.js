@@ -22,7 +22,7 @@ export default function Reveal({ children, width }) {
                 }}
                 initial="hidden"
                 animate={animationControls}
-                transition={{ duration: 0.65, delay: 0.25 }}
+                transition={{ duration: 0.5, delay: 0.25 }}
             >
                 {[children]}
             </motion.div>

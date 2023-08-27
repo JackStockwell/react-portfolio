@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Header/index';
-import Reveal from '../utils/Reveal';
+import Reveal from '../utils/Animation/Reveal';
+
 
 export default function Project({ page }) {
     
@@ -14,8 +15,9 @@ export default function Project({ page }) {
             <Header page={page} header={headingData}></Header>
             <div className='content-wrap'>
                 <section className='section'>
-                    <div className='max-120'>
+                    <div className='max'>
                         <Reveal>
+                            <h1>Test</h1>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
                                 velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
@@ -32,7 +34,7 @@ export default function Project({ page }) {
                     </div>
                 </section>
                 <section className='section b-inline'>
-                    <div className='max-120'>
+                    <div className='max'>
                         <section className='projects'>
                             <section>
                                 <div>
@@ -43,8 +45,9 @@ export default function Project({ page }) {
                                         ac dui fermentum, sed luctus urna tincidunt.
                                     </p> 
                                 </div>
-                                <img className='p-img' src='https://placehold.co/600x400' />
+                                <img className='p-img' src='https://placehold.co/600x388' />
                             </section>
+                            <hr></hr>
                             <section>
                                 <div>
                                     <p>                                  

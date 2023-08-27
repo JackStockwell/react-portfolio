@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,600;1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,11 +6,12 @@
 }
 
 :root {
-    --bg-primary: #1C1D25;
+    --bg-primary: #168950;
     --bg-secondary: #EBEBEB;
-    --dblue: #121365;
+    --bg-dark: #1C1D25;
+    --dblue: #001220;
     --dgreen: #23E282;
-    --font-standard: 'jost', 'sans-seriff';
+    --font-standard: 'Montserrat', 'sans-seriff';
     --gap: 1rem;
 }
 
@@ -25,15 +25,15 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 0.6rem;
 }
 
 body::-webkit-scrollbar-track {
-    background: var(--bg-primary);
+    background: var(--bg-dark);
 }
 
 body::-webkit-scrollbar-thumb {
-    background: var(--bg-primary);
+    background: var(--dgreen);
     border-radius: 1rem;
 }
 
@@ -60,7 +60,7 @@ body::-webkit-scrollbar-thumb {
     padding: 2rem 3rem;
 }
 
-.max-120 {
+.max {
     margin: auto;
     max-width: 70em;
 }
@@ -68,8 +68,10 @@ body::-webkit-scrollbar-thumb {
 /* UTILS */
 
 .b-inline {
-    box-shadow: 0px 20px -20px #fff inset;
+    box-shadow: 0px -20px 3px -20px #fff inset;
 }
+
+
 
 /* PROJECTS */
 
@@ -84,7 +86,6 @@ body::-webkit-scrollbar-thumb {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: var(--gap);
-    background: var(--dblue)
 }
 
 .projects section:nth-child(even) {
@@ -92,14 +93,13 @@ body::-webkit-scrollbar-thumb {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: var(--gap);
-    background: var(--dgreen)
 }
 
 .p-img {
     width: 100%;
     height: 100%;
-    max-height: 300px;
-    max-width: 500px;
+    max-height: 338px;
+    max-width: 600px;
 }
 
 /* BUTTON ANI */
@@ -134,7 +134,6 @@ body::-webkit-scrollbar-thumb {
         display: flex;
         justify-items: end;
         gap: 1rem;
-        justify-items: end;
     }
     
     .projects section:nth-child(even) {
