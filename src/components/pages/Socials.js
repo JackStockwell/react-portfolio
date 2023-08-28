@@ -13,6 +13,7 @@ export default function Socials({ page }) {
         <>
             <Header page={page} header={headingData}></Header>
             <div className='content-wrap'>
+                
                 <div className='section'>
                     <section className='socials'>
                             <a className='social-a' href='https://github.com/JackStockwell'>
@@ -21,11 +22,7 @@ export default function Socials({ page }) {
                             </a>
                             <a className='social-a' href='https://github.com/JackStockwell'>
                                 <FontAwesomeIcon className='social-i' icon="fa-brands fa-linkedin" />
-                                linkedin
-                            </a>
-                            <a className='social-a' href='https://github.com/JackStockwell'>
-                                <FontAwesomeIcon className='social-i' icon="fa-brands fa-github" />
-
+                                Linkedin
                             </a>
                     </section>
                 </div>

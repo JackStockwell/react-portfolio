@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Header/index';
 import Reveal from '../utils/Animation/Reveal';
+import '../../styles/projects.css'
 
 
 export default function Project({ page }) {
@@ -26,23 +27,22 @@ export default function Project({ page }) {
                         <section className='projects'>
                             <Reveal>
                             <section>
-                                <div className='p-content'>
-                                    <h3>Bundl</h3> 
-                                    <p>
-                                        Bundl is an innovative online platform that fosters connections through shared interests and stimulating discussions.
-                                        Users are able to create profiles, post to their favourite communities and even creat their own!
-                                    </p>
-                                    <br></br>
-                                    <p>
-                                        Bundl was team made during my time at University, it involed various technologies such as: node and NPM packages such as express, mySQL and sequelize; handlebars, multer
-                                        along with others, all wrapped with interactive Front-end.
-                                    </p>
+                                <div className='card'>
+                                    <img className='p-img' src='https://github.com/JackStockwell/bundl/blob/main/public/assets/imgs/bundl-title.jpeg?raw=true' />  
+                                    <div className='overlay'>
+                                        <div>
+                                            <h4>Bundl.</h4>
+                                            <i>A recapture at something brilliant</i>
+                                        </div>
+                                        <div className='card-link'>
+                                            <a className='a-button' href=''>Repo</a>
+                                            <a href='a-button'>Live</a>
+                                        </div>
+                                    </div>           
                                 </div>
                                 <div className='card'>
-                                    <a className='card-link' href='https://github.com/JackStockwell/bundl' target='_blank'>
-                                        <img className='p-img' src='https://github.com/JackStockwell/bundl/blob/main/public/assets/imgs/bundl-title.jpeg?raw=true' />  
-                                        <span className='overlay'>Bundl</span>
-                                    </a> 
+                                    <img className='p-img' src='https://github.com/JackStockwell/bundl/blob/main/public/assets/imgs/bundl-title.jpeg?raw=true' />
+                                    
                                 </div>
                             </section>
                             </Reveal>
