@@ -5,3 +5,21 @@ footer {
     background: var(--bg-dark);
     color: var(--bg-secondary);
 }
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+[data-icon-link] {
+    display: flex;
+    align-items: center;
+    flex-flow: column;   
+}
+
+.f-icon {
+    width: 40px;
+    height: 40px;
+}
+

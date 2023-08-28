@@ -91,6 +91,12 @@ a:any-link {
     margin: 3rem 0;
 }
 
+.h {
+    text-align: center;
+    font-size: 25px;
+    margin: 2rem;
+}
+
 /* SOCIALS */
 
 .socials {
@@ -101,6 +107,7 @@ a:any-link {
 }
 
 .social-i {
+    margin: 1rem;
     min-width: 100px;
     height: 100px;
 }
@@ -109,6 +116,22 @@ a:any-link {
     display: flex;
     flex-flow: column;
     text-align: center;
+}
+
+/* SKILLS */
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem 0rem;
+    justify-items: center;
+    text-align: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+.skill-i {
+    width: 200px;
 }
 
 /* NAV ANI */
@@ -164,9 +187,12 @@ a:any-link {
     }
 
     .socials {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .skills {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     .overlay:hover {
         box-shadow: inset 902px 0 0 0 var(--overlay-hover);

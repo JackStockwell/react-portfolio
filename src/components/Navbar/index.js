@@ -54,7 +54,7 @@ function Navbar() {
                         className={currentPage === '/socials' ? 'nav-a nav-active' : 'nav-a'}
                     >
                         <FontAwesomeIcon className='icon' icon="fa-solid fa-circle-user" />
-                        <span className='icon-span'>Socials</span>
+                        <span className='icon-span'>Contact</span>
                     </Link>
                 </li>
             </ul>
