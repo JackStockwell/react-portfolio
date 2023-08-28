@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../Header/index';
-import Reveal from '../utils/Reveal';
+import Reveal from '../utils/Animation/Reveal';
+import '../../styles/projects.css'
+
 
 export default function Project({ page }) {
     
@@ -14,47 +16,79 @@ export default function Project({ page }) {
             <Header page={page} header={headingData}></Header>
             <div className='content-wrap'>
                 <section className='section'>
-                    <div className='max-120'>
+                    <div className='max'>
                         <Reveal>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-                                velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-                                ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-                                non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-                                ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-                                rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-                                tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-                                porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-                                vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-                                fames ac ante ipsum primis in faucibus.
-                            </p>
+                            <h2>GitHub Repos</h2>
                         </Reveal>
                     </div>
                 </section>
                 <section className='section b-inline'>
-                    <div className='max-120'>
+                    <div className='max'>
                         <section className='projects'>
+                            <Reveal>
                             <section>
-                                <div>
-                                    <h3>Project 1</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-                                        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-                                        ac dui fermentum, sed luctus urna tincidunt.
-                                    </p> 
+                                <div className='card'>
+                                    <img className='p-img' src='https://github.com/JackStockwell/bundl/blob/main/public/assets/imgs/bundl-title.jpeg?raw=true' />  
+                                    <div className='overlay'>
+                                        <div>
+                                            <h4>Bundl.</h4>
+                                            <i>A recapture at something brilliant</i>
+                                        </div>
+                                        <div className='card-link'>
+                                            <a className='a-button' href=''>Repo</a>
+                                            <a href='a-button'>Live</a>
+                                        </div>
+                                    </div>           
                                 </div>
-                                <img className='p-img' src='https://placehold.co/600x400' />
+                                <div className='card'>
+                                    <img className='p-img' src='https://github.com/JackStockwell/bundl/blob/main/public/assets/imgs/bundl-title.jpeg?raw=true' />
+                                    
+                                </div>
                             </section>
+                            </Reveal>
+                            <hr className='hr-gradient'></hr>
+                            <Reveal>
                             <section>
-                                <div>
-                                    <p>                                  
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-                                        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-                                        ac dui fermentum, sed luctus urna tincidunt.
+                                <div className='p-content reverse-order'>
+                                    <h3>React Portfolio</h3> 
+                                    <p>
+                                        My first React project. And you're on it! This was my first real experience using React and I learnt many things regarding it.
+                                        Made to display my works and what I am capable of. It will be continuously updated throughout my career. 
                                     </p>
-                                    <h3>Project 2</h3>    
-                                </div>                            
+                                    <br></br>
+                                    <p>
+                                        
+                                    </p>
+                                </div>
+                                <div className='p-img'>
+                                    <a href='https://github.com/JackStockwell/react-portfolio' target='_blank'>
+                                        <img className='p-img' src='https://github.com/JackStockwell/bundl/blob/main/public/assets/imgs/bundl-title.jpeg?raw=true' />  
+                                    </a> 
+                                </div>                           
                             </section>
+                            </Reveal>
+                            <hr className='hr-gradient'></hr>
+                            <Reveal>
+                            <section>
+                                <div className='p-content'>
+                                    <h3>React Portfolio</h3> 
+                                    <p>
+                                        Bundl is an innovative online platform that fosters connections through shared interests and stimulating discussions.
+                                        Users are able to create profiles, post to their favourite communities and even creat their own!
+                                    </p>
+                                    <br></br>
+                                    <p>
+                                        Bundl was team made during my time at University, it involed various technologies such as: node and NPM packages such as express, mySQL and sequelize; handlebars, multer
+                                        along with others, all wrapped with interactive Front-end.
+                                    </p>
+                                </div>
+                                <div className='p-img'>
+                                    <a href='https://github.com/JackStockwell/react-portfolio' target='_blank'>
+                                        <img className='p-img' src='https://github.com/JackStockwell/bundl/blob/main/public/assets/imgs/bundl-title.jpeg?raw=true' />  
+                                    </a> 
+                                </div>                           
+                            </section>
+                            </Reveal>
                         </section>
                     </div>
                 </section>

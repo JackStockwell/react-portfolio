@@ -1,0 +1,82 @@
+@import url('./styles.css');
+
+/* PROJECTS */
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap);
+}
+
+.projects section:nth-child(odd) {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: var(--gap);
+}
+
+.projects section:nth-child(even) {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: var(--gap);
+}
+
+.p-img {
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    max-height: 500px;
+    object-fit: cover;
+    filter: blur(0px);
+    transition: all 300ms ease-in;
+}
+
+.p-content {
+    display: flex;
+    gap: 0.5rem;
+    flex-flow: column;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    max-height: 500px;
+}
+
+.card-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.overlay {
+    display: flex;
+    opacity: 1;
+    padding: 5rem;
+    position: absolute;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    gap: 3rem;
+    color: var(--dgreen);
+    box-shadow: inset 0 0 0 0 #0000003e;
+    transition: box-shadow 500ms ease;
+    background: var(--overlay);
+}
+
+.overlay h4 {
+    text-transform: unset;
+    font-size: 20px;
+    
+}
+
+.card:hover .p-img {
+    filter: grayscale(80%);
+    filter: blur(1px);
+}

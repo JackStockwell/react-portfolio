@@ -1,3 +1,5 @@
+@import url('../../styles/styles.css');
+
 /* HEADER */
 
 .header {
@@ -8,6 +10,10 @@
     height: 100vh;
     overflow: hidden;
     background: center / cover url('../../assets/bgs/header-bg1.svg');
+}
+
+h1 {
+    font-size: 40px;
 }
 
 .blur {
