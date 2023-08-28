@@ -1,25 +1,25 @@
 import React from "react";
 import "../../styles/styles.css"
 import "./footer.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Footer({}) {
 
     return (
         <footer>
             <section className="section">
-                <div className="max">
-                    <p> 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-                        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-                        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-                        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-                        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-                        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-                        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-                        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-                        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-                        fames ac ante ipsum primis in faucibus.
-                    </p>
+                <div className='footer-wrapper max'>
+                    <h5>Made by Jack Stockwell</h5>
+                    <div className="socials">
+                        <a data-icon-link href='https://github.com/JackStockwell'>
+                            < FontAwesomeIcon className='f-icon' icon="fa-brands fa-github" />
+                            Github
+                        </a>
+                        <a data-icon-link href='https://github.com/JackStockwell'>
+                            <FontAwesomeIcon className='f-icon' icon="fa-brands fa-linkedin" />
+                            Linkedin
+                        </a>
+                    </div>
                 </div>
             </section>
         </footer>

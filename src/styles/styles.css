@@ -12,7 +12,7 @@
     --bg-secondary: #EBEBEB;
     --bg-dark: #001220;
     --dgreen: #23E282;
-    --overlay: #00122055;
+    --overlay: #00122065;
     --overlay-hover: #033358ca;
     --font-standard: 'Montserrat', 'sans-seriff';
     --gap: 2rem;
@@ -80,6 +80,8 @@ a:any-link {
 
 .hr-gradient {
     height: 3px;
+    width: 100%;
+    max-width: 500px;
     border: none; 
     border-radius: 6px;
     background-color: var(--bg-secondary);
@@ -87,6 +89,12 @@ a:any-link {
 
 .margin {
     margin: 3rem 0;
+}
+
+.h {
+    text-align: center;
+    font-size: 25px;
+    margin: 2rem;
 }
 
 /* SOCIALS */
@@ -99,6 +107,7 @@ a:any-link {
 }
 
 .social-i {
+    margin: 1rem;
     min-width: 100px;
     height: 100px;
 }
@@ -107,6 +116,22 @@ a:any-link {
     display: flex;
     flex-flow: column;
     text-align: center;
+}
+
+/* SKILLS */
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem 0rem;
+    justify-items: center;
+    text-align: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+.skill-i {
+    width: 200px;
 }
 
 /* NAV ANI */
@@ -162,9 +187,12 @@ a:any-link {
     }
 
     .socials {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .skills {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     .overlay:hover {
         box-shadow: inset 902px 0 0 0 var(--overlay-hover);
