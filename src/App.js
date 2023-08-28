@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/index";
 import Home from "./components/pages/Home"
 import Projects from "./components/pages/Projects";
 import Socials from "./components/pages/Socials";
+import Footer from "./components/Footer/index"
 
 import { Route, Routes } from 'react-router-dom';
 
@@ -20,7 +21,8 @@ function App() {
          <Route path='/' element={ <Home /> }/>
          <Route path='/projects' element={ <Projects /> }/>
          <Route path='/socials' element={ <Socials /> }/>
-      </Routes>      
+      </Routes>
+      <Footer />
     </>
   );
 }

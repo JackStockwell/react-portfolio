@@ -8,11 +8,10 @@
 :root {
     --bg-primary: #168950;
     --bg-secondary: #EBEBEB;
-    --bg-dark: #1C1D25;
-    --dblue: #001220;
+    --bg-dark: #001220;
     --dgreen: #23E282;
     --font-standard: 'Montserrat', 'sans-seriff';
-    --gap: 1rem;
+    --gap: 2rem;
 }
 
 /* BODY */
@@ -38,8 +37,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* REMOVES LINK CSS */
-.nav a,
-.nav a:any-link {
+a,
+a:any-link {
     text-decoration: none;
     color: inherit;
 }
@@ -65,13 +64,22 @@ body::-webkit-scrollbar-thumb {
     max-width: 70em;
 }
 
+.reverse-order {
+    order: none;
+}
+
 /* UTILS */
 
 .b-inline {
     box-shadow: 0px -20px 3px -20px #fff inset;
 }
 
-
+.hr-gradient {
+    height: 3px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--bg-secondary);
+}
 
 /* PROJECTS */
 
@@ -98,9 +106,60 @@ body::-webkit-scrollbar-thumb {
 .p-img {
     width: 100%;
     height: 100%;
-    max-height: 338px;
-    max-width: 600px;
+    max-height: 281px;
+    max-width: 500px;
+    object-fit: cover;
+    filter: blur(0px);
+    transition: all 300ms ease-in;
 }
+
+.p-content {
+    display: flex;
+    gap: 0.5rem;
+    flex-flow: column;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 281px;
+    max-width: 500px;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 281px;
+    max-width: 500px;
+}
+
+.card-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    opacity: 0;
+    position: absolute;
+    color: var(--dgreen);
+    background: var(--dblue);
+}
+
+.card:hover .overlay {
+    opacity: 1;
+    animation: card-hover 400ms ease-in-out;
+}
+
+.card:hover .p-img {
+    filter: grayscale(80%);
+    filter: blur(1px);
+}
+
 
 /* BUTTON ANI */
 
@@ -128,16 +187,40 @@ body::-webkit-scrollbar-thumb {
     transform-origin: bottom left;
 }
 
+.card:hover {
+    background: #0000006e;
+}
+
+@keyframes card-hover {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 @media (min-width: 60em) {
 
     .projects section:nth-child(odd) {
         display: flex;
         justify-items: end;
+        align-items: center;
         gap: 1rem;
     }
     
     .projects section:nth-child(even) {
         display: grid;
         grid-template-columns: 2fr 1fr;
+    }
+
+    .reverse-order {
+        order: 2;
     }
 }

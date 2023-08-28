@@ -1,3 +1,5 @@
+@import url('../../styles/styles.css');
+
 /* HEADER */
 
 .header {
@@ -37,52 +39,4 @@ h1 {
     height: 10rem;
     border-radius: 50%;
     object-fit: cover;
-}
-
-.title {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.title h1 {
-    padding: 0.25rem;
-    color: var(--dgreen);
-}
-
-.spread {
-    display: flex;
-    justify-content: space-between;
-}
-
-.hamburger {
-    background: var(--dgreen);
-    padding: 0.5rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 2px;
-}
-
-.hbicon {
-    transform: scale(1.5);
-}
-
-@media(min-width: 60em) {
-    .title h1 {
-        box-shadow: inset 0 0 0 0 var(--dgreen);
-        padding: 0.25rem;
-        color: var(--dgreen);
-        transition: box-shadow 300ms ease-in;
-    }
-
-    .title h1:hover {
-        box-shadow: inset 375px 0 0 0 var(--dgreen);
-        color: var(--dblue);
-    }
-
-    .title {
-        justify-content: space-evenly;
-        width: fit-content;
-    }
 }
