@@ -2,6 +2,7 @@
 
 ## Screenshot
 
+![Screenshot of portfolio website](./SCREENSHOT.png)
 
 ## Credits
 

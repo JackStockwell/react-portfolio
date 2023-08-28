@@ -9,9 +9,10 @@ import { Route, Routes } from 'react-router-dom';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faHouse, faHeart, faCircleUser, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 
-library.add(faHouse, faHeart, faCircleUser, faBars)
+library.add( faHouse, faHeart, faCircleUser, faBars, faGithub, faLinkedin)
 
 function App() {
   return (

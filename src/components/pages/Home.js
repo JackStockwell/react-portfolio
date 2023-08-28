@@ -6,7 +6,7 @@ export default function Home() {
 
     const headingData = {
         title: "Hi, I'm Jack Stockwell.",
-        sub: "An aspiring Full-stack Developer, looking to break into the Web Development industry."
+        sub: "An aspiring Full Stack Developer, looking to break into the Web Development industry."
     }
 
     return (

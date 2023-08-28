@@ -190,6 +190,14 @@
         display: none;
     }
 
+    .nav-active .icon {
+        display: none;
+    }
+    
+    .nav-active .icon-span {
+        display: inline;
+    }
+
     .title h1 {
         box-shadow: inset 0 0 0 0 var(--dgreen);
         padding: 0.25rem;
