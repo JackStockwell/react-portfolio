@@ -87,7 +87,7 @@ export default function Project({ page }) {
                             </Reveal>
                             <Reveal>
                                 <div className='card'>
-                                    <img className='p-img' alt='React portfolio in action' src='https://github.com/JackStockwell/react-portfolio/raw/main/SCREENSHOT.png' />  
+                                    <img className='p-img' alt='React portfolio in action' src='https://github.com/JackStockwell/react-portfolio/raw/main/SCREENSHOT.gif' />  
                                     <div className='overlay'>
                                         <div>
                                             <h4>React Portfolio</h4>

@@ -8,21 +8,21 @@ import Footer from "./components/Footer/index"
 import { Route, Routes } from 'react-router-dom';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faHouse, faHeart, faCircleUser, faBars, faFile } from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faHeart, faCircleUser, faBars, faFile, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 
-library.add( faHouse, faHeart, faCircleUser, faBars, faGithub, faLinkedin, faFile)
+library.add( faHouse, faHeart, faCircleUser, faBars, faGithub, faLinkedin, faFile, faEnvelope)
 
 function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-         <Route path='/' element={ <Home /> }/>
-         <Route path='/projects' element={ <Projects /> }/>
-         <Route path='/socials' element={ <Socials /> }/>
-      </Routes>
+        <Routes>
+          <Route path='/' element={ <Home /> }/>
+          <Route path='/projects' element={ <Projects /> }/>
+          <Route path='/socials' element={ <Socials /> }/>
+        </Routes>
       <Footer />
     </>
   );
