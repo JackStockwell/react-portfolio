@@ -8,8 +8,14 @@ footer {
 
 .footer-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-flow: column;
+    gap: 2rem;
+}
+
+[data-order-1] {
+    order: 2
 }
 
 [data-icon-link] {
@@ -23,3 +29,15 @@ footer {
     height: 40px;
 }
 
+
+@media (min-width: 60em) {
+
+    .footer-wrapper {
+        justify-content: space-between;
+        flex-flow: row;
+    }
+
+    [data-order-1] {
+        order: 0
+    }
+}

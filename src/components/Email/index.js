@@ -1,54 +1,78 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
+
 import "../../styles/styles.css"
 import "./email.css"
 
-export default function Email({}) {
+export default function Email() {
 
+    // Initialise form data.
     let formData = {
-        email: 'example@mail.com',
-        name: 'Username',
-        text: 'Password123!',
+        email: ' ',
+        from_name: ' ',
+        message: '',
         errorMessage: ''
     }
 
+    // Set state for formData.
     const [data, setData] = useState(formData)
 
     const handleInputChange = (e) => {
         // Getting the value and name of the input which triggered the change
         let { name, value } = e.target;
-    
+        // Set the data to the input on the target. 
         setData({ ...data, [name]: value })
     
-        console.log([name], value)
-        // Based on the input type, we set the state of either email, username, and password
-        // TODO: Add an else statement to the end that will set the password to the value of 'inputValue'
     };
 
-    let { email, name, text } = formData;
+    // Deconstruct data.
+    let { email, form_name, message } = data
 
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        if (!email) {
+            
+        }
+  
+        emailjs.sendForm('service_zbq1s4n', 'template_5r44ao7', form.current, 'r1PM_f0hfPpyDAu_O')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+    
     return (
         <section children='email'>
-            <form className="form">
+            <form className="form" ref={form} onSubmit={sendEmail}>
                 <input
-                value={email}
-                name="email"
-                onChange={handleInputChange}
-                type="email"
-                placeholder="email"
+                    value={email}
+                    name="email"
+                    onChange={handleInputChange}
+                    type="email"
+                    placeholder="example@mail.com"
+                    required
                 />
                 <input
-                value={name}
-                name="userName"
-                onChange={handleInputChange}
-                type="text"
-                placeholder="username"
+                    value={form_name}
+                    name="name"
+                    onChange={handleInputChange}
+                    type="text"
+                    placeholder="John Doe"
+                    required
                 />
-                <textarea>
-                    
+                <textarea
+                    value={message}
+                    name="message"
+                    onChange={handleInputChange}
+                    placeholder="What do you want to ask?"
+                    required
+                >
                 </textarea>
-                <button type="button">
-                Submit
-                </button>
+                <input type="submit" value="Send" />
             </form>
         </section>
     )
