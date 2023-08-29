@@ -24,7 +24,7 @@ function Navbar() {
                         className='hamburger'
                         onClick={() => setIsNavBar(!isNavBar)}
                         >
-                        <FontAwesomeIcon className='hbicon' icon="fa-solid fa-bars" />
+                        {isNavBar ? <FontAwesomeIcon className='hbicon' icon="fa-solid fa-x" /> : <FontAwesomeIcon className='hbicon' icon="fa-solid fa-bars" />}
                     </button>               
                 }
             </div>

@@ -8,8 +8,8 @@ export default function Email() {
 
     // Initialise form data.
     let formData = {
-        email: ' ',
-        from_name: ' ',
+        email: '',
+        from_name: '',
         message: '',
         errorMessage: ''
     }
@@ -46,33 +46,45 @@ export default function Email() {
     };
     
     return (
-        <section children='email'>
+        <section className='email'>
             <form className="form" ref={form} onSubmit={sendEmail}>
-                <input
-                    value={email}
-                    name="email"
-                    onChange={handleInputChange}
-                    type="email"
-                    placeholder="example@mail.com"
-                    required
-                />
-                <input
-                    value={form_name}
-                    name="name"
-                    onChange={handleInputChange}
-                    type="text"
-                    placeholder="John Doe"
-                    required
-                />
-                <textarea
-                    value={message}
-                    name="message"
-                    onChange={handleInputChange}
-                    placeholder="What do you want to ask?"
-                    required
-                >
-                </textarea>
-                <input type="submit" value="Send" />
+                <div className="col md-6">
+                    <label className="label" htmlFor="email" >Email</label>
+                    <input
+                        className="form-controls"
+                        value={email}
+                        name="email"
+                        onChange={handleInputChange}
+                        type="email"
+                        placeholder="example@mail.com"
+                        required
+                    />
+                </div>
+                <div className="col md-6">
+                    <label className="label" htmlFor="name" >Name</label>
+                    <input
+                        className="form-controls"
+                        value={form_name}
+                        name="name"
+                        onChange={handleInputChange}
+                        type="text"
+                        placeholder="John Doe"
+                        required
+                    />
+                </div>
+                <div className="col md-12">
+                    <label className="label" htmlFor="message">Leave your message.</label>
+                    <textarea
+                        className="form-text"
+                        value={message}
+                        name="message"
+                        onChange={handleInputChange}
+                        placeholder="What do you want to ask?"
+                        required
+                    >
+                    </textarea>
+                </div>
+                <input className="btn underline-a" type="submit" value="Send" />
             </form>
         </section>
     )

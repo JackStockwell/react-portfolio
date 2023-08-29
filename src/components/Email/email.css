@@ -1,0 +1,81 @@
+@import url('../../styles/styles.css');
+
+.email {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    max-width: 50em;
+    padding: 2rem 0;
+    margin: auto;
+}
+
+.form {
+    display: flex;
+    flex-flow: wrap;
+    padding: 1rem;
+}
+
+.label {
+    display: inline-block;
+    padding: 0.5rem;
+    color: var(--bg-secondary);
+    font-size: 20px;
+}
+
+.col {
+    display: flex;
+    flex-flow: column;
+}
+
+.md-6 {
+    width: 100%;
+    position: relative;
+}
+
+.md-12 {
+    width: 100%;
+}
+
+.form-controls {
+    padding: 0.5rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed var(--bg-dark);
+    color: var(--bg-secondary);
+}
+
+.form-text {
+    padding: 0.5rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed var(--bg-dark);
+    color: var(--bg-secondary);
+    resize: vertical;
+    min-height: 20ch;
+    max-height: 40ch;
+}
+
+.form-controls::placeholder,
+.form-text::placeholder {
+    font-family: var(--font-standard);
+    color: var(--bg-secondary);
+}
+
+.form .btn {
+    background: transparent;
+    border: 2px solid var(--bg-dark);
+    color: var(--bg-secondary);
+}
+
+@media (min-width: 60em) {
+    .md-6 {
+        flex: 0 0 50%;
+        max-width: 100%;
+    }
+
+    .form .btn:hover {
+        color: var(--dgreen);
+    }
+
+}

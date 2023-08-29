@@ -3,6 +3,7 @@
 /* NAV MOBILE */
 
 .nav {
+    position: absolute;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -15,6 +16,7 @@
 }
 
 .nav-list {
+    position: relative;
     display: flex;
     flex-flow: column;
     gap: 0.5rem;
@@ -119,7 +121,8 @@
 }
 
 .hbicon {
-    transform: scale(1.5);
+    min-width: 30px;
+    min-height: 30px;
 }
 
 
