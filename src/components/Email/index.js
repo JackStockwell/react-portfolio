@@ -28,8 +28,10 @@ export default function Email() {
     // Deconstruct data.
     let { email, form_name, message } = data
 
+    // Form ref
     const form = useRef();
 
+    // Sends the email using emailjs.
     const sendEmail = (e) => {
         e.preventDefault();
 
