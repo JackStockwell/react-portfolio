@@ -45,7 +45,7 @@
     {
         "title": "React Portfolio",
         "description": "A collection of my works, as you can see.",
-        "image": "https://github.com/JackStockwell/react-portfolio/raw/main/SCREENSHOT.gif",
+        "image": "https://github.com/JackStockwell/react-portfolio/raw/main/misc/SCREENSHOT.gif",
         "url": {
             "repo": "https://github.com/JackStockwell/react-portfolio",
             "live": "https://jackstockwell.github.io/react-portfolio/",
