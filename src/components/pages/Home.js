@@ -20,10 +20,9 @@ export default function Home() {
                         <Reveal>
                             <h3 className='h'>Welcome.</h3>
                             <p>
-                                Based in South Essex, I am actively looking to start a Web Developemt career.
-                                I attened a 6 month Full-stack Web Development Bootcamp with The University of Birmingham and
-                                I am now looking to not only continue my journey and improve my knowledge & understanding but also start
-                                begin my first Web Development job.
+                                Based in South Essex, I am actively looking to start a Web Development career.
+                                I attended a 6 month Full-stack Web Development Bootcamp with The University of Birmingham and
+                                I am now looking to not only continue my journey and improve my knowledge & understanding, but also looking to start my first Web Development job.
                             </p>
                         </Reveal>
                     </div>
