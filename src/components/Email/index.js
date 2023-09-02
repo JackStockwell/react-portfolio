@@ -1,15 +1,19 @@
+// Imports
 import React, { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 
 import "../../styles/styles.css"
 import "./email.css"
 
+// Validate email helper
+import { validateEmail } from "../utils/Animation/helpers";
+
 export default function Email() {
 
     // Initialise form data.
     let formData = {
         email: '',
-        from_name: '',
+        form_name: '',
         message: '',
         errorMessage: ''
     }
@@ -21,24 +25,32 @@ export default function Email() {
         // Getting the value and name of the input which triggered the change
         let { name, value } = e.target;
         // Set the data to the input on the target. 
-        setData({ ...data, [name]: value })
-    
+        setData({ ...data, [name]: value })    
     };
 
     // Deconstruct data.
-    let { email, form_name, message } = data
+    let { email, form_name, message, errorMessage } = data
 
     // Form ref
     const form = useRef();
 
     // Sends the email using emailjs.
-    const sendEmail = (e) => {
+    const handleSendEmail = (e) => {
         e.preventDefault();
 
-        if (!email) {
-            
+        // Data validation. Validates the email using the helpers.
+        if (!validateEmail(email)) {
+            setData({ ...data, errorMessage: "You must enter a valid email!"})
+            return;
         }
-  
+
+        // Ensures the form name is at least 2 characters and a message is entered.
+        if ( form_name < 2 || !message) {
+            setData({ ...data, errorMessage: "You must enter a name and message!"})
+            return;
+        }
+        
+        // Uses emailjs to send an email more securely, parses Public key, template key and user key.
         emailjs.sendForm('service_zbq1s4n', 'template_5r44ao7', form.current, 'r1PM_f0hfPpyDAu_O')
             .then((result) => {
                 console.log(result.text);
@@ -49,7 +61,7 @@ export default function Email() {
     
     return (
         <section className='email'>
-            <form className="form" ref={form} onSubmit={sendEmail}>
+            <form className="form" ref={form} onSubmit={handleSendEmail}>
                 <div className="col md-6">
                     <label className="label" htmlFor="email" >Email</label>
                     <input
@@ -57,9 +69,7 @@ export default function Email() {
                         value={email}
                         name="email"
                         onChange={handleInputChange}
-                        type="email"
                         placeholder="example@mail.com"
-                        required
                     />
                 </div>
                 <div className="col md-6">
@@ -67,11 +77,10 @@ export default function Email() {
                     <input
                         className="form-controls"
                         value={form_name}
-                        name="name"
+                        name="form_name"
                         onChange={handleInputChange}
                         type="text"
                         placeholder="John Doe"
-                        required
                     />
                 </div>
                 <div className="col md-12">
@@ -82,10 +91,11 @@ export default function Email() {
                         name="message"
                         onChange={handleInputChange}
                         placeholder="What do you want to ask?"
-                        required
                     >
                     </textarea>
                 </div>
+                {/* If there is an error message it is automaticall displayed. */}
+                <span className="err">&nbsp;{errorMessage}&nbsp;</span>
                 <input className="btn underline-a" type="submit" value="Send" />
             </form>
         </section>

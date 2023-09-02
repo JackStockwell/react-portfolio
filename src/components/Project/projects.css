@@ -1,0 +1,102 @@
+@import url('../../styles/index.css');
+
+/* PROJECTS */
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap);
+    justify-items: center;
+}
+
+.p-img {
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    filter: blur(0px);
+    transition: all 300ms ease-in;
+}
+
+.p-content {
+    display: flex;
+    gap: 0.5rem;
+    flex-flow: column;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    max-height: 500px;
+}
+
+.card-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.overlay {
+    opacity: 1;
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 4rem 0;
+    gap: 3rem;
+    color: var(--bg-secondary);
+    text-align: center;
+    box-shadow: inset 0 0 0 0 #0000003e;
+    transition: box-shadow 500ms ease;
+    background: var(--overlay);
+}
+
+.overlay h4 {
+    text-transform: unset;
+    font-size: 30px;
+    
+}
+
+.a-button,
+.a-button:any-link {
+    padding: 1rem 2.25rem;
+    background: var(--bg-dark);
+    border-radius: 3px;
+    color: var(--dgreen);
+    box-shadow: inset 0 0 0 0 var(--dgreen);
+    transition: box-shadow 400ms ease-in-out;
+    font-weight: 500;
+}
+
+@media (min-width: 60em) {
+    
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: var(--gap);
+    }
+
+    .a-button,
+    .a-button:any-link {
+        padding: 1rem 3rem;
+    }
+
+    .a-button:hover {
+        box-shadow: inset 150px 0 0 0 var(--dgreen);
+        color: var(--bg-dark);
+    }
+
+    .card:hover .p-img {
+        filter: grayscale(80%);
+        filter: blur(1px);
+    }
+}

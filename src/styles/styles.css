@@ -133,8 +133,15 @@ a:any-link {
 .social-a {
     display: flex;
     flex-flow: column;
-    text-align: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: inherit;
+    font-family: inherit;
 }
+
 
 /* SKILLS */
 

@@ -1,9 +1,11 @@
+// Imports
 import React from 'react';
 import Header from '../Header/index';
 import Reveal from '../utils/Animation/Reveal';
 
 export default function Home() {
 
+    // Data for header component
     const headingData = {
         title: "Hi, I'm Jack Stockwell.",
         sub: "An aspiring Full Stack Developer, looking to break into the Web Development industry."
