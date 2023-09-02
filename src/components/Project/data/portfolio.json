@@ -1,0 +1,67 @@
+[
+    {
+        "title": "Bundl",
+        "description": "A recapture at something brilliant.",
+        "image": "https://github.com/JackStockwell/bundl/blob/main/public/assets/imgs/bundl-title.jpeg?raw=true",
+        "url": {
+            "repo": "https://github.com/JackStockwell/bundl",
+            "live": "https://bundl-2a246e325746.herokuapp.com/",
+            "type": "Live"
+        }
+    },
+    {
+        "title": "Shout.",
+        "description": "You'll hear what it's all about.",
+        "image": "https://raw.githubusercontent.com/JackStockwell/shout./main/public/assets/screenshots/chrome_Cdst1OYYjn.gif",
+        "url": {
+            "repo": "https://github.com/JackStockwell/shout.",
+            "live": "https://shout-blog-2ca8a82d114a.herokuapp.com/login",
+            "type": "Live"
+        }
+        
+    },
+    {
+        "title": "Social Media API",
+        "description": "A crack at MongoDB and Mongoose",
+        "image": "https://github.com/JackStockwell/social-media-api/raw/main/screencap.gif",
+        "url": {
+            "repo": "https://github.com/JackStockwell/social-media-api",
+            "live": "https://drive.google.com/file/d/1u5WADCq0ukM81_ZcOcL1-QbQxYjpcW9w/view",
+            "type": "Video"
+        }
+        
+    },
+    {
+        "title": "E-Commerce API",
+        "description": "First go at an MySQL Database",
+        "image": "https://github.com/JackStockwell/e-commerce/raw/main/misc/assets/GET_requests.gif",
+        "url": {
+            "repo": "https://github.com/JackStockwell/e-commerce",
+            "live": "https://drive.google.com/file/d/1BGE3OoJyaMvSWbGLt0-vWxaRH8toKYov/view",
+            "type": "Video"
+        }
+        
+    },
+    {
+        "title": "React Portfolio",
+        "description": "A collection of my works, as you can see.",
+        "image": "https://github.com/JackStockwell/react-portfolio/raw/main/SCREENSHOT.gif",
+        "url": {
+            "repo": "https://github.com/JackStockwell/react-portfolio",
+            "live": "https://jackstockwell.github.io/react-portfolio/",
+            "type": "Live"
+        }
+        
+    },
+    {
+        "title": "Scranhub",
+        "description": "First collaborative project, for all your food needs",
+        "image": "https://github.com/JackStockwell/scranhub/raw/main/assets/screenshots/fullscreenshot.jpg",
+        "url": {
+            "repo": "https://github.com/JackStockwell/scranhub",
+            "live": "https://jackstockwell.github.io/scranhub/",
+            "type": "Live"
+        }
+        
+    }
+]

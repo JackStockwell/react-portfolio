@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-![Screenshot of portfolio website](./SCREENSHOT.gif)
+![Screenshot of portfolio website](./misc/SCREENSHOT.gif)
 
 ## Description
 
@@ -33,7 +33,11 @@ To view my portfolio, it can be found [here](https://jackstockwell.github.io/rea
 
 [Revel Animation Tutorial](https://www.youtube.com/watch?v=hjbxaYTMhy0&list=LL&index=2) - Reveal animation.
 
+[Framer motion docs](https://www.framer.com/motion/use-in-view/) - Used to explain further the uses of Framer motion.
+
 [EmailJS](https://www.emailjs.com/docs/examples/reactjs/) - Component used to create a way to send emails safely.
+
+[Download PDF](https://www.geeksforgeeks.org/how-to-download-pdf-file-in-reactjs/) - Used to download local PDF on my resume.
 
 ## License
 
