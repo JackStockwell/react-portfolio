@@ -54,7 +54,7 @@ export default function Socials({ page }) {
                             </a>
                             <button className='social-a' onClick={resumeDownload}>
                                 <FontAwesomeIcon className='social-i' icon="fa-solid fa-file" />
-                                Resume
+                                Résumé
                             </button>
                         </section>
                     </div>
